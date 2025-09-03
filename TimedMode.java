@@ -1,4 +1,6 @@
-public class TimedMode implements GameMode {
+import java.util.concurrent.TimeUnit;
+
+public class TimedMode extends GameMode {
     private WordBank wordBank;
     private WPMCalculator calculator;
     private int timeLimitSeconds;
