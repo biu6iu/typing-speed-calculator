@@ -22,15 +22,16 @@ public class WordCountMode extends GameMode {
         List<String> words = wordBank.getRandomWords(wordTarget);
         Scanner scanner = new Scanner(System.in);
         GameSession gameSession = new GameSession(words);
+        System.out.println("Type " + this.wordTarget + " words as fast as you can!");
+
+        // count down
+        countdown();
 
         // print out each word
         for (String word : words) {
             System.out.print(word + " ");
         }
         System.out.print("\n");
-
-        // count down
-        countdown();
 
         // start game
         gameSession.start();

@@ -11,8 +11,9 @@ public class Main {
 
         GameMode game;
         if (choice == 1) {
-            game = new TimedMode(wordBank, calculator, 30);
+            game = new TimedMode(wordBank, calculator, 5);
         } else {
+            // time mode doesnt work lol
             game = new WordCountMode(wordBank, calculator, 15);
         }
 
